@@ -18,7 +18,7 @@
     "create-graz-app": "pnpm --dir packages/create-graz-app",
     "lint": "turbo run lint",
     "release": "turbo run build --filter=graz && pnpm publish --filter graz",
-    "release-adapter": "turbo run build --filter=\"graz-adapter-*\" && pnpm publish --filter=\"graz-adapter-*\"",
+    "release-connectors": "turbo run build --filter=connectors && pnpm publish --filter=connectors",
     "test": "turbo run test"
   },
   "devDependencies": {

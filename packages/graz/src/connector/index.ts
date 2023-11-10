@@ -14,9 +14,6 @@ export interface Connector {
   getOfflineSigner: (chainId: string) => OfflineSigner & OfflineDirectSigner;
   getOfflineSignerOnlyAmino: (chainId: string) => OfflineSigner;
   getOfflineSignerAuto: (chainId: string) => Promise<OfflineSigner | OfflineDirectSigner>;
-}
-
-export interface GrazAdapter extends Connector {
   name: string;
   id: string;
   keystoreEvent: string;

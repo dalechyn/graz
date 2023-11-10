@@ -1,7 +1,7 @@
 import type { ChainInfo } from "@keplr-wallet/types";
-import type { AccountData, GrazAdapter } from "graz";
+import type { AccountData, Connector } from "graz";
 
-export class LeapAdapter implements GrazAdapter {
+export class LeapConnector implements Connector {
   name = "Leap";
   id = "leap";
   keystoreEvent = "leap_keystorechange";

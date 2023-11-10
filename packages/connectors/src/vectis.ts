@@ -1,7 +1,7 @@
 import type { ChainInfo, KeyInfo, OfflineAminoSigner, OfflineDirectSigner } from "@vectis/extension-client";
-import type { AccountData, GrazAdapter } from "graz";
+import type { AccountData, Connector } from "graz";
 
-export class VectisAdapter implements GrazAdapter {
+export class VectisConnector implements Connector {
   name = "vectis";
   id = "vectis";
   keystoreEvent = "vectis_accountChanged";
